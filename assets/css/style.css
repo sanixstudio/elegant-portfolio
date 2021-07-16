@@ -1,0 +1,25 @@
+:root {
+  --bg-primary: #212121;
+  --bg-secondary: #131313;
+  --f-primary: #000;
+  --f-secondary: #aaa;
+  --f-link: #aaa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Playfair Display', serif;
+}
+
+header {}
+
+main {}
+
+footer {}

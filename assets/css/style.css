@@ -20,11 +20,10 @@ body {
 }
 
 header {
-  background: url('/assets/images/header_bg.png');
+  background: url('/assets/images/Final.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center -200px;
-  min-height: 1200px;
+  background-position: center -18em;
+  min-height: 850px;
 }
 
 .max-960  {
@@ -86,8 +85,11 @@ header {
 
 .intro {
   color: var(--link-main);
-  margin: 9em 0;
-  margin-bottom: 4em;
+  margin: 10em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
 }
 
 .salutation, .sub-title {
@@ -97,8 +99,9 @@ header {
 .title {
   font-family: var(--ff-secondary);
   font-size: 4.5rem;
-  font-size: clamp(3rem, 9vw, 4.5rem);
+  font-size: clamp(2.3rem, 9vw, 4.5rem);
   text-align: center;
+  margin-bottom: .2em;
 } 
 
 .sub-title {
@@ -119,6 +122,8 @@ header {
   letter-spacing: .25px;
   padding: .5em 1.75em;
   transition: background ease .3s;
+  /* box-shadow: 0 2em 2em rgb(37, 45, 117); */
+  box-shadow: 0 30px 40px 0 rgb(37 45 117/100%);
 }
 
 .cta:hover {
@@ -131,17 +136,34 @@ main {}
 
 footer {}
 
-@media only screen and (max-width: 850px) {
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
+
+@media only screen and (max-width: 768px) {
   header {
-    background: url('/assets/images/header_bg_md-min.png');
+    background: url('/assets/images/sm.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -100px;
-    min-height: 990px;
+    background-position: center -20em;
+    min-height: 720px;
+  }
+
+  .intro {
+    margin-top: 8em;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    background-position: -1em -20em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-position: -1em -25em;
+    min-height: 640px;
+  }
 
   .toggle-menu {
     display: flex;
@@ -162,7 +184,6 @@ footer {}
   }
 
   .toggle-menu:active, .toggle-menu:focus {
-    /* background: #000; */
     color: red;
   }
   
@@ -170,10 +191,41 @@ footer {}
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6em;
+  }
+
+  .sub-title {
+    text-align: center;
+    font-size: .8rem;
   }
 }
 
 @media only screen and (max-width: 380px) {
+  header {
+    background-position: -1em -25em;
+    background-position:  -6em -25em;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro {
+    margin-top: 4em;
+  }
+  
+  .title {
+    line-height: 1.1em;
+    margin: .5em 0;
+  }
+
+  .sub-title {
+    text-align: center;
+  }
+
   .ctas {
     flex-direction: column;
   }

@@ -57,10 +57,6 @@ header {
   gap: 2em;
 }
 
-/* .nav li:not(.toggle-menu) {
-  display: none;
-} */
-
 .nav li a {
   text-transform: uppercase;
   color: var(--link-main);
@@ -81,6 +77,10 @@ header {
 .toggle-menu i {
   color: #fff;
   font-size: 1.5rem;
+}
+
+.show {
+  display: flex;
 }
 
 .intro {
@@ -122,7 +122,6 @@ header {
   letter-spacing: .25px;
   padding: .5em 1.75em;
   transition: background ease .3s;
-  /* box-shadow: 0 2em 2em rgb(37, 45, 117); */
   box-shadow: 0 30px 40px 0 rgb(37 45 117/100%);
 }
 
@@ -178,9 +177,9 @@ footer {}
     backdrop-filter: blur(10px);
     align-items: center;
     padding: 6em 0;
-    width: 100%;
-    right: 0;
+    width: 111%;
     top: 55px;
+    margin: 0 -1.3em;
   }
 
   .toggle-menu:active, .toggle-menu:focus {

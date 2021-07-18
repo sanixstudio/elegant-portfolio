@@ -1,6 +1,7 @@
-const toggleMenu = document.querySelector('.toggle-menu');
+const toggleBtn = document.querySelector('#toggle-menu-bars');
 const nav = document.querySelector('.nav');
 
-toggleMenu.onclick = ()=> {
-  toggleMenu.toggleAttribute('fa-bars');
+toggleBtn.onclick = ()=> {
+  toggleBtn.classList.toggle('fa-times');
+  nav.style.display !== "flex" ? nav.style.display = 'flex' : nav.style.display = 'none'
 }

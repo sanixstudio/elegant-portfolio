@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: url('/assets/images/Final.png');
+  background: url('../images/Final.png');
   background-repeat: no-repeat;
   background-position: center -18em;
   min-height: 850px;
@@ -170,7 +170,7 @@ main > section {
   font-size: 1.3rem;
 }
 
-.my-img {}
+/* .my-img {} */
 
 .tech-stack {
   display: flex;
@@ -211,7 +211,7 @@ main > section {
   display: none;
 }
 
-footer {}
+/* footer {} */
 
 /* ************* */
 /* MEDIA QUERIES */
@@ -245,7 +245,7 @@ footer {}
 
 @media only screen and (max-width: 768px) {
   header {
-    background: url('/assets/images/sm.png');
+    background: url('../images/sm.png');
     background-repeat: no-repeat;
     background-position: center -20em;
     min-height: 720px;
@@ -276,14 +276,16 @@ footer {}
     display: none;
     position: absolute;
     flex-direction: column;
-    border: 1px solid #000;
-    background: #000c;
-    backdrop-filter: blur(10px);
+    background: #fff;
     align-items: center;
     padding: 6em 0;
     width: 111%;
     top: 55px;
     margin: 0 -1.3em;
+  }
+
+  .nav a {
+    color: #000;
   }
 
   .toggle-menu:active, .toggle-menu:focus {

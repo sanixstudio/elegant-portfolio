@@ -30,8 +30,9 @@ body {
 header {
   background: url('../images/Final.png');
   background-repeat: no-repeat;
-  background-position: center -18em;
-  min-height: 850px;
+  background-position: center -12em;
+  min-height: 990px;
+  border: 1px solid #000;
 }
 
 .max-960  {
@@ -93,7 +94,7 @@ header {
 
 .intro {
   color: var(--link-main);
-  margin: 10em 0;
+  margin: 16em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,31 +424,42 @@ footer a, footer a:active {
 
 @media only screen and (max-width: 768px) {
   header {
-    background: url('../images/sm.png');
+    background: url('../images/Final.png');
     background-repeat: no-repeat;
-    background-position: center -20em;
-    min-height: 720px;
+    background-position: center -10em;
+    min-height: 990px;
   }
 
   .intro {
     margin-top: 8em;
   }
 
-  /* .project {
-    flex-direction: column;
+  .project {
+    height: auto;
+    flex-direction: column-reverse;
     align-items: center;
-  } */
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    background-position: -1em -20em;
   }
+
+  .project:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .project-info {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .project-snapshot, .project:nth-child(even) .project-snapshot {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
   header {
-    background-position: -1em -25em;
+    /* background-position: -1em -25em; */
     min-height: 640px;
   }
 
@@ -516,5 +528,35 @@ footer a, footer a:active {
 
   .ctas {
     flex-direction: column;
+  }
+
+  .project-info p{
+    font-size: 1rem;
+    margin: 1em 0;
+  }
+
+  .project-tech {
+    margin: 1em 0;
+  }
+
+  .contact-cta {
+    padding: .5em 2.5em;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .copy-right {
+    margin-top: 0;
+  }
+
+  .copy-right p {
+    font-size: .8rem;
+  }
+
+  .copy-right p:last-child {
+    line-height: 3em;
   }
 }

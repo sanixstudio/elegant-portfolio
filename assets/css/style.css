@@ -1,6 +1,9 @@
 :root {
+  --c-secondary: #717171;
+  --bg-light: #f1f1f1;
   --link-main: #fff;
   --link-secondary: #5135B7;
+  --link-other: #581C98;
   --ff-primary: 'Open Sans', sans-serif;
   --ff-secondary: 'Playfair Display', serif;
 }
@@ -173,8 +176,6 @@ main {
   font-size: 1.3rem;
 }
 
-/* .my-img {} */
-
 .tech-stack {
   display: flex;
   align-items: center;
@@ -276,9 +277,33 @@ main {
   justify-content: space-around;
 }
 
-.project-info ul {
+.project-title {
+  letter-spacing: 1.25px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--ff-secondary);
+}
+
+.project-description {
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--c-secondary) !important;
+}
+
+.project-tech {
   display: flex;
-  gap: 4em;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  font-size: .7rem;
+}
+
+.project-tech li {
+  background: var(--bg-light);
+  color: var(--c-secondary);
+  border-radius: 5px;
+  padding: 0.2em .8em;
+  box-shadow: 0 .5em .5em rgba(0, 0, 0, .1)
 }
 
 .project-snapshot {
@@ -298,19 +323,72 @@ footer {
 
 .footer-content {
   display: flex;
-  padding-top: 6em;
-  border: 1px solid #000;
+  margin-top: 6em;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  gap: 4em;
   color: #fff;
 }
 
+.footer-content .section-heading {
+  margin: 0;
+}
+
+.contact-cta {
+  background: var(--link-other);
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, .4);
+  transition: background ease .3s;
+  padding: 1em 6em;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-cta:hover, .contact-cta:focus {
+  background: #fff;
+  color: var(--link-other);
+}
+
 .contact {
-  margin: -3em 0 4em 0;
+  display: flex;
+  gap: 1em;
+}
+
+.contact-social {
+  display: grid;
+  place-content: center;
+  font-size: 1.4rem;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: background ease .3s;
+}
+
+.contact-social:hover, .contact-social:active {
+  background: var(--link-other);
+  color: #fff;
+}
+
+footer a, footer a:active {
+  color: var(--link-other);
 }
 
 .copy-right {
+  margin-top: 4em;
   margin-bottom: 1em;
+  text-align: center;
+  opacity: .6;
+}
+
+.copy-right a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.fa-heart {
+  color: red;
 }
 
 /* ************* */
@@ -354,6 +432,11 @@ footer {
   .intro {
     margin-top: 8em;
   }
+
+  /* .project {
+    flex-direction: column;
+    align-items: center;
+  } */
 }
 
 @media only screen and (max-width: 600px) {

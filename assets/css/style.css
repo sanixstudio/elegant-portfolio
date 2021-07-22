@@ -18,7 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -35,7 +34,7 @@ body {
 header {
   background: url('../images/Final.png');
   background-repeat: no-repeat;
-  background-position: center -12em;
+  background-position: center 100%;
   min-height: 990px;
 }
 
@@ -460,6 +459,7 @@ footer a, footer a:active {
 
 }
 
+
 @media only screen and (max-width: 768px) {
   header {
     background: url('../images/Final.png');
@@ -467,23 +467,23 @@ footer a, footer a:active {
     background-position: -70em -10em;
     min-height: 990px;
   }
-
+  
   .project {
     height: auto;
     flex-direction: column-reverse;
     align-items: center;
   }
-
+  
   .project:nth-child(even) {
     flex-direction: column-reverse;
   }
-
+  
   .project-info {
     width: 100%;
     min-height: 300px;
     border-radius: 0 0 20px 20px;
   }
-
+  
   .project-tech {
     margin: 2em 0;
   }
@@ -492,14 +492,20 @@ footer a, footer a:active {
     border-radius: 20px 20px 0 0;
     width: 100%;
   }
-
+  
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    background: url('../images/sm_bg3.png');
+    background-repeat: repeat-x;
+    min-height: 750px !important;
+  }
+  
   .toggle-menu {
     display: flex;
   }
-
+  
   .nav {
     display: none;
     position: absolute;
@@ -525,6 +531,7 @@ footer a, footer a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8em 0;
   }
 
   .sub-title {
@@ -535,9 +542,9 @@ footer a, footer a:active {
 
 @media only screen and (max-width: 380px) {
   header {
-    background-position:  -75em -10em;
+    /* background-position:  -75em -20em; */
   }
-
+  
   .about-myself p{
     font-size: 1.1rem;
   }
@@ -554,28 +561,28 @@ footer a, footer a:active {
     line-height: 1.1em;
     margin: .5em 0;
   }
-
+  
   .sub-title {
     text-align: center;
   }
-
+  
   .ctas {
     flex-direction: column;
   }
-
+  
   .project-info p{
     font-size: 1rem;
     margin: 1em 0;
   }
-
+  
   .project-tech {
     margin: 1em 0;
   }
-
+  
   .contact-cta {
     padding: .5em 2.5em;
   }
-
+  
   .contact {
     flex-wrap: wrap;
     justify-content: center;
@@ -584,12 +591,20 @@ footer a, footer a:active {
   .copy-right {
     margin-top: 0;
   }
-
+  
   .copy-right p {
     font-size: .8rem;
   }
-
+  
   .copy-right p:last-child {
     line-height: 3em;
+  }
+}
+
+@media only screen and (max-width: 315px) {
+  .project-links {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

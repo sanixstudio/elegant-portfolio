@@ -541,10 +541,6 @@ footer a, footer a:active {
 }
 
 @media only screen and (max-width: 380px) {
-  header {
-    /* background-position:  -75em -20em; */
-  }
-  
   .about-myself p{
     font-size: 1.1rem;
   }
@@ -576,7 +572,7 @@ footer a, footer a:active {
   }
   
   .project-tech {
-    margin: 1em 0;
+    margin: 2.5em 0;
   }
   
   .contact-cta {
@@ -602,6 +598,10 @@ footer a, footer a:active {
 }
 
 @media only screen and (max-width: 315px) {
+  .project-tech {
+    flex-direction: column;
+    align-items: center;
+  }
   .project-links {
     /* flex-direction: column; */
     flex-wrap: wrap;

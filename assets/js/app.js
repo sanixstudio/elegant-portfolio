@@ -17,8 +17,6 @@ home.addEventListener('click', () => {
 
 document.addEventListener('scroll',(e) => {
   let HeaderHeight = header.offsetHeight;
-  // (scrollY >= HeaderHeight) ? stickyMenu.style.display = 'unset' : stickyMenu.style.display = 'none'
-  // (scrollY >= HeaderHeight) ? stickyMenu.style.transform = 'translateY(0)' : stickyMenu.style.transform = 'translateY(-100%)'
   if (scrollY >= HeaderHeight) {
     headerBar.style.position = 'fixed'
     headerBar.style.width = '100%'

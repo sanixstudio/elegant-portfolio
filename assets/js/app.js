@@ -5,16 +5,22 @@ const headerBarInner = document.querySelector('.header-bar-inner');
 const headerBar = document.querySelector('.header-bar');
 const stickyMenu = document.querySelector('.sticky-menu-container');
 const home = document.querySelector('#home');
+const anchors = document.querySelectorAll('.nav li a');
 
+console.log(anchors)
+
+// hide responsive menu on click
+for (let link of anchors) {
+  link.onclick = () => nav.style.display = 'none';
+}
+
+// toggle responsive menu
 toggleBtn.onclick = () => {
   toggleBtn.classList.toggle('fa-times');
   nav.style.display !== "flex" ? nav.style.display = 'flex' : nav.style.display = 'none'
 }
 
-home.addEventListener('click', () => {
-  console.log("hi")
-})
-
+// show hide Sticky Menu
 document.addEventListener('scroll',(e) => {
   let HeaderHeight = header.offsetHeight;
   if (scrollY >= HeaderHeight) {

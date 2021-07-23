@@ -702,6 +702,8 @@ footer a, footer a:active {
     inset: 0;
     top: 55px;
     margin: 0 -1.3em;
+    overflow: hidden;
+    z-index: 10000;
   }
 
   .nav li a {

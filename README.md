@@ -21,8 +21,6 @@ I have created, designed, and developed it myself as inspiration from [Figma](ht
 - Font-awesome Icons
 - Reusable components
 
-# Snapshot
-
 # Design Process
 This portfolio project is first designed in Figma with the following steps:
   - Planned and sketch the layout with wire-frames

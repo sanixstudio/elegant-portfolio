@@ -516,7 +516,7 @@ footer {
   -o-transition: background ease .3s;
   transition: background ease .3s;
   position: relative;
-  padding: 1em 6em;
+  padding: .8em 2em;
   border-radius: 30px;
   cursor: pointer;
   color: #fff;
@@ -524,7 +524,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5em;
+  gap: .7em;
 }
 
 .contact-social:hover .svg-icon {
@@ -732,6 +732,12 @@ footer a, footer a:active {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  .footer-ctas {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .about-myself p{
     font-size: 1.1rem;
@@ -820,5 +826,9 @@ footer a, footer a:active {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .footer-ctas {
+    font-size: .9rem;
   }
 }

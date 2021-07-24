@@ -693,17 +693,23 @@ footer a, footer a:active {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 50vh;
+    min-height: 300px;
     background: #fff;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     padding: 6em 0;
-    inset: 0;
+    left: 0;
+    right: 0;
     top: 55px;
     margin: 0 -1.3em;
     overflow: hidden;
-    z-index: 10000;
+    z-index: 10;
+  }
+  
+  .nav ul {
+    display: grid;
+    border: 1px solid #000;
   }
 
   .nav li a {

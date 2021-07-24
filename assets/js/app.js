@@ -7,11 +7,12 @@ const stickyMenu = document.querySelector('.sticky-menu-container');
 const home = document.querySelector('#home');
 const anchors = document.querySelectorAll('.nav li a');
 
-console.log(anchors)
-
 // hide responsive menu on click
 for (let link of anchors) {
-  link.onclick = () => nav.style.display = 'none';
+  link.onclick = () => {
+    nav.style.display = 'none'
+    toggleBtn.classList.remove('fa-times')
+  }
 }
 
 // toggle responsive menu

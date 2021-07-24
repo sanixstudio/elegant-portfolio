@@ -20,6 +20,8 @@ I have created, designed, and developed it myself as inspiration from [Figma](ht
 - Images Optimization
 - Font-awesome Icons
 - Reusable components
+- SEO Optimization
+- Cross browser compatibility
 
 # Design Process
 This portfolio project is first designed in Figma with the following steps:

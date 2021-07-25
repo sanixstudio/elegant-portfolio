@@ -8,10 +8,14 @@ const home = document.querySelector('#home');
 const anchors = document.querySelectorAll('.nav li a');
 
 // hide responsive menu on click
-for (let link of anchors) {
-  link.onclick = () => {
-    nav.style.display = 'none'
-    toggleBtn.classList.remove('fa-times')
+const BrowserWidth = window.matchMedia("(max-width: 600px)").matches;
+console.log(BrowserWidth)
+if (BrowserWidth) {
+  for (let link of anchors) {
+    link.onclick = () => {
+      nav.style.display = 'none'
+      toggleBtn.classList.remove('fa-times')
+    }
   }
 }
 

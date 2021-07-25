@@ -260,10 +260,23 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-content max-960">
-      <h2 id="contact" class="section-heading">Contact</h2>
-      <div class="footer-ctas">
+      <h2 id="contact" class="section-heading">Let's get in touch</h2>
+      <!-- <div class="footer-ctas">
         <a href="mailto:sanixstudio@gmail.com" class="contact-cta" title="sanixstudio@gmail.com"><i class="fas fa-envelope"></i>Let's discuss</a>
         <a href="callto: 415 802 8751" class="contact-cta" title="1 (415) 802 8751"><i class="fas fa-phone"></i>Let's talk</a>
+      </div> -->
+      <!-- <div class="contact-cta">Let's Connect</div> -->
+      <div class="contact_source">
+        <span class="copy-text-label">Click to copy links below</span>
+        <div onClick="copyText('email-text')">
+          <i class="fas fa-envelope"></i><span class="email">sanixstudio@gmail.com</span>
+          <input type="text" class="copy-input" id="email-text" value="sanixstudio@gmail.com">
+        </div>
+        <!-- <small>OR</small> -->
+        <div onClick="copyText('phone-text')">
+          <i class="fas fa-phone"></i><span class="phone">1 (415) 8028751</span>
+          <input type="text" class="copy-input" id="phone-text" value="1 (415) 8028751">
+        </div>
       </div>
       <div class="contact">
         <a class="contact-social" href="https://www.linkedin.com/in/sanixstudio/" rel="noopener noreferrer" target="_blank">

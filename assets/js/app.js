@@ -8,9 +8,8 @@ const home = document.querySelector('#home');
 const anchors = document.querySelectorAll('.nav li a');
 
 // hide responsive menu on click
-const BrowserWidth = window.matchMedia("(max-width: 600px)").matches;
-console.log(BrowserWidth)
-if (BrowserWidth) {
+const BrowserWidthIsSmall = window.matchMedia("(max-width: 600px)").matches;
+if (BrowserWidthIsSmall) {
   for (let link of anchors) {
     link.onclick = () => {
       nav.style.display = 'none'
@@ -41,3 +40,47 @@ document.addEventListener('scroll',(e) => {
     headerBar.style.padding = 'unset'
   }
 })
+
+// Copy to Clipboard
+function copyText(target) {
+  const element = document.getElementById(target);
+  const text = element.value;
+
+  copyToClipBoard(text);
+  const msg = "Copied to clipboard"
+  let oldText = element.previousElementSibling.textContent;
+
+  element.previousElementSibling.textContent = msg;
+  element.previousElementSibling.previousSibling.classList.add("spin")
+  setTimeout(() => {
+    element.previousElementSibling.textContent = oldText;
+    element.previousElementSibling.previousSibling.classList.remove("spin")
+  }, 1500)
+
+}
+
+// copyToClipBoard function
+function copyToClipBoard(text) {
+  if (window.clipboardData && window.clipboardData.setData) {
+      // IE specific code path to prevent textarea being shown while dialog is visible.
+      return clipboardData.setData("Text", text);
+  } else if (
+      document.queryCommandSupported &&
+      document.queryCommandSupported("copy")
+  ) {
+      var textarea = document.createElement("textarea");
+      textarea.textContent = text;
+      textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+          return document.execCommand("copy"); // Security exception may be thrown by some browsers.
+      } catch (ex) {
+          console.warn("Copy to clipboard failed.", ex);
+          return false;
+      } finally {
+          document.body.removeChild(textarea);
+      }
+  }
+}

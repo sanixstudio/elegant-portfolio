@@ -14,8 +14,18 @@ if (BrowserWidthIsSmall) {
     link.onclick = () => {
       nav.style.display = 'none'
       toggleBtn.classList.remove('fa-times')
+      toggleBtn.classList.add('fa-bars')
     }
   }
+} else if (BrowserWidthIsSmall) {
+  nav.style.display = 'flex'
+  // toggleBtn.classList.remove('fa-times')
+}
+
+window.onresize = (e) => {
+  let windowWidth = window.innerWidth;
+  if ( windowWidth > 600 ) nav.style.display = "flex"
+  else nav.style.display = "none"
 }
 
 // toggle responsive menu

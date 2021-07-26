@@ -505,7 +505,6 @@ footer .section-heading {
 }
 
 .contact_source > div  {
-  /* border: 1px solid #ffffff33; */
   background: rgba(255, 255, 255, .1);
   width: 240px;
   border-radius: 20px;
@@ -525,6 +524,8 @@ footer .section-heading {
 
 .spin {
   animation: spin linear infinite 1s;
+  -webkit-animation: spin linear infinite 1s;
+  -o-animation: spin linear infinite 1s;
 }
 
 @keyframes spin{

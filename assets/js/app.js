@@ -6,6 +6,18 @@ const headerBar = document.querySelector('.header-bar');
 const stickyMenu = document.querySelector('.sticky-menu-container');
 const home = document.querySelector('#home');
 const anchors = document.querySelectorAll('.nav li a');
+const footerCta = document.querySelector('.footer-cta');
+const toolTip = document.querySelector('.tool-tip');
+
+// console.log(footerCta, toolTip)
+
+function showToolTip() {
+  toolTip.style.opacity = '1'
+}
+
+function hideToolTip() {
+  toolTip.style.opacity = '0'
+}
 
 // hide responsive menu on click
 const BrowserWidthIsSmall = window.matchMedia("(max-width: 600px)").matches;

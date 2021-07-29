@@ -51,7 +51,7 @@
         </div>
         <div class="ctas">
           <a class="cta" href="#projects">My Projects</a>
-          <a class="cta" href="https://drive.google.com/file/d/1HMZpjI3RMu474ihYmyQe0KXR63xTT28l/view?usp=sharing" 
+          <a class="cta" href="https://drive.google.com/file/d/15o8_2fG8Ue4kAXMGZp2bFEC35ZuMHMCS/view?usp=sharing" 
             target="_blank" rel="noopener noreferrer">View My CV</a>
         </div>
       </div>
@@ -67,7 +67,8 @@
         <img src="./assets/images/adi_fc.png" alt="sanixstudio">
       </div>
       <div class="about-myself">
-        <p>I am a software engineer and front-end enthusiast living in San Francisco, Bay Area</p>
+        <p>I am a software engineer living in San Francisco, Bay Area</p>
+        <p>Drawing sketches, hand crafting, playing PC games, watching and discussing movies are my hobbies</p>
         <p>I write semantically clean and efficient code to bring ideas and designs to life. I enjoy
           working and collaborating with team members to solve problems and make user-friendly UI/UX
           components
@@ -189,7 +190,7 @@
           <div class="project-info">
             <h3 class="project-title">InfoMovia</h3>
             <p class="project-description">InfoMovia is a front-end application that 
-              allows users to retrieve information for movies/tv-shows</p>
+              allows users to retrieve information for movies/tv-shows from TMDB</p>
             <ul class="project-tech">
               <li>HTML5</li>
               <li>CSS3</li>
@@ -210,7 +211,7 @@
         <div class="project">
           <div class="project-info">
             <h3 class="project-title">Fire Gallery</h3>
-            <p class="project-description">FireGallery allow users to upload images that 
+            <p class="project-description">FireGallery is front-end REACT application that allow users to upload images to Firebase database that 
               are seen by the community members that are active on FireGallery</p>
              <ul class="project-tech">
               <li>React</li>
@@ -233,8 +234,8 @@
         <div class="project">
           <div class="project-info">
             <h3 class="project-title">Todo</h3>
-            <p class="project-description">A simple Todo App that allows user to create, read, 
-              update, and delete notes that remains persistent in the browser</p>
+            <p class="project-description">Todo App is full-stack application that allows user to create, read, 
+              update, and delete notes that remains persistent in the MongoDB database.</p>
              <ul class="project-tech">
                <li>React</li>
                <li>Bootstrap</li>
@@ -261,21 +262,11 @@
   <footer>
     <div class="footer-content max-960">
       <h2 id="contact" class="section-heading">Let's get in touch</h2>
-      <!-- <div class="footer-ctas">
-        <a href="mailto:sanixstudio@gmail.com" class="contact-cta" title="sanixstudio@gmail.com"><i class="fas fa-envelope"></i>Let's discuss</a>
-        <a href="callto: 415 802 8751" class="contact-cta" title="1 (415) 802 8751"><i class="fas fa-phone"></i>Let's talk</a>
-      </div> -->
-      <!-- <div class="contact-cta">Let's Connect</div> -->
       <div class="contact_source">
-        <span class="copy-text-label">Click to copy links below</span>
-        <div onClick="copyText('email-text')">
+        <span class="copy-text-label tool-tip">Click to copy email</span>
+        <div onClick="copyText('email-text')" onmouseover="showToolTip()" onmouseout="hideToolTip()" class="footer-cta">
           <i class="fas fa-envelope"></i><span class="email">sanixstudio@gmail.com</span>
           <input type="text" class="copy-input" id="email-text" value="sanixstudio@gmail.com">
-        </div>
-        <!-- <small>OR</small> -->
-        <div onClick="copyText('phone-text')">
-          <i class="fas fa-phone"></i><span class="phone">1 (415) 8028751</span>
-          <input type="text" class="copy-input" id="phone-text" value="1 (415) 8028751">
         </div>
       </div>
       <div class="contact">

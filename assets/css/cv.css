@@ -1,0 +1,41 @@
+:root {
+  --fc-primary: #fff;
+  --fc-secondary: rgba(255,255,255,0.5);
+  --fc-section-title: #419cb9;
+  --fs-primary: 16px;
+  --fs-secondary: 14px;
+  --fs-main-title: 36px;
+  --fs-section-title: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #212121;
+  color: var(--fc-primary);
+}
+
+main {
+  background: url(../images/project_pattern_blue.png);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}

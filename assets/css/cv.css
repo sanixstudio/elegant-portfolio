@@ -1,6 +1,6 @@
 :root {
   --fc-primary: #fff;
-  --fc-secondary: rgba(255,255,255,0.5);
+  --fc-secondary: rgba(255,255,255,0.2);
   --fc-section-title: #419cb9;
   --fs-primary: 16px;
   --fs-secondary: 14px;
@@ -18,6 +18,21 @@ h1 {
   font-size: 2.25rem;
 }
 
+h2 {
+  border-top: 1px solid var(--fc-secondary);
+  border-bottom: 1px solid var(--fc-secondary);
+  background: #000;
+  color: var(--fc-section-title);
+  text-transform: uppercase;
+  padding: .2em 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -28,14 +43,96 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #212121;
   color: var(--fc-primary);
+  /* font-size: 12px; */
 }
 
 main {
-  background: url(../images/project_pattern_blue.png);
+  background: url(../images/cv_bg.jpg);
   background-repeat: no-repeat;
   min-height: 100vh;
   background-size: cover;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1em 2em;
+}
+
+.main-content {
+  display: flex;
+}
+
+header {
+  height: 9em;
+}
+
+.buttons-bar {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.buttons-bar a {
+  border: 1px solid var(--fc-primary);
+  border-radius: 30px;
+  padding: 0.75em 2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.buttons-bar a:hover {
+  background: var(--fc-section-title);
+}
+
+.left-content {
+  flex: 3;
+  margin-right: 9em;
+}
+
+.right-content {
+  flex: 1.2;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--fc-secondary);
+}
+
+.work-title-bar {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-title-bar > div > a {
+  border: 1px solid var(--fc-secondary);
+  border-radius: 20px;
+  padding: .3em 1.5em;
+}
+
+.work-title-bar > div > a:hover {
+  background: var(--fc-secondary);
+}
+
+.light {
+  font-weight: 100;
+  color: rgba(255, 255, 255, .5);
+}
+
+.work ul {
+  margin-left: 1em;
+}
+
+.work ul li {
+  list-style-image: url('../images/ellipse.png');
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  letter-spacing: .03em;
+  font-weight: 300;
+}
+
+.right-content h2 {
+  text-align: center;
 }

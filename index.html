@@ -1,58 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="copyright" content="Adnan Niaz">
   <meta name="owner" content="Adnan Niaz">
   <meta name="title" content="Adnan Niaz">
   <meta name="author" content="Adnan Niaz, Sanixstudio, adnan@sanixstudio.com">
-  <meta name="keywords" content="Adnan Niaz Portfolio, Adi Portfolio, Software Engineer, Full-stack developer, Front-end developer, UI Developer">
-  <meta name="description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma.">
+  <meta name="keywords"
+    content="Adnan Niaz Portfolio, Adi Portfolio, Software Engineer, Full-stack developer, Front-end developer, UI Developer">
+  <meta name="description"
+    content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/images/og.png">
+  <meta property="og:image"
+    content="https://adi-resources.s3.us-west-1.amazonaws.com/sanix-studio.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFkaCXVzLXdlc3QtMSJHMEUCIGKMTwhvzoJ3ZqLmdqoqXl1a6fV7aoHLFHAoCjWUKe%2B%2BAiEAtm4j%2FbauN1xDMHdnRvdc7SqhG9lXVrSeRo6N6kcuc04q5AIIIhAAGgw1NjM1OTk2NzEyODgiDILZ16WqaLzeK%2BPDoyrBAkSdlluaZDPcoGE5af0qS9vXR5VAp1xwbnmVvJwwT%2Fe4elFy8ARG03eFNjh2YsEqzRXYgWdOMWBLfjcK%2FXN%2FyCzkal%2F42cw22LOj4BtKyCDcKTZEs%2FzAaar3Sm%2BBI4MgvKyNavRgv2hkGEU8ygizyzaVA7lr6OKv%2FbWxO3NLst%2BULGtv7R2emgGNAirbum%2BQhOvcOkw%2B6qX8WwFB8w7LVmn0qkqO9BRlwyzvN72JMgkERI4IOi4bwKs70z67KB2bZN1F0vwt8TrTLPHjMtdYZDEhrQZk6gzj9RvMjC2pXeox74%2BnYx2zB%2FJcax%2BOjoq%2F0ss8GtcG0Ft%2BKX1T7una%2FaZbS2V6lBrUZKMUncbvyuRa6VHbFWcsaV%2BP7F1QZaSmot2Na0mtmtQIJSQs%2FfZse3biz4L3i1AoodjiOXIz562C7jDnu7eTBjqzAnaZV4KH90c6s8Qfz0FwPBf3lIgGCpw8A1qDHFEFE%2BDug0IdN046yAIcyzgOQZPTiG45%2FsRTRJz2Eeki2ynz1lJka1ZGZJTFPaePkM1byroCtnRQjueTVoTluSVXa2vTnJLxIMQVFw7RCoVFaWF4EwAYDOQ%2FkCIOXiPd6Eq7dwTndDZ42rzIqzlQJ98o8I%2Fvw6v4clOPCSRLES%2FHch8x1K5eExgngsWT603ZbXZfRk77Pg%2BaArbx4yPRgtFDDRTiQ%2FxeTokYqH3KVUW7DfhSn6YhygtMclLJZ3oqAc6Q1NRsw1LXRkLG0eEffDHGhbnrSnJFjAwJmuQNyPTdIPg6A%2BFPZCekhXMp9ZAA0ggwJw4mJ56nAmgz5DVPu3dyx6iBBBw6%2FtsUTN%2BZJkMBMfOM0ae%2FPQc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220501T070711Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYGOJIP74GAMODHOG%2F20220501%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=bf4da98e363d09d8abde794267abaf28c5cd7f2837d398ad8f69419d4444ac7d">
   <meta property="twitter:url" content="https://sanix-studio.web.app/">
-  <meta property="twitter:description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma.">
+  <meta property="twitter:description"
+    content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma.">
   <meta name="og:url" content="https://sanix-studio.web.app/">
   <meta name="og:title" content="Adnan Niaz Portfolio">
-  <meta name="og:image" content="./assets/images/og.png">
+  <meta name="og:image"
+    content="https://adi-resources.s3.us-west-1.amazonaws.com/sanix-studio.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFkaCXVzLXdlc3QtMSJHMEUCIGKMTwhvzoJ3ZqLmdqoqXl1a6fV7aoHLFHAoCjWUKe%2B%2BAiEAtm4j%2FbauN1xDMHdnRvdc7SqhG9lXVrSeRo6N6kcuc04q5AIIIhAAGgw1NjM1OTk2NzEyODgiDILZ16WqaLzeK%2BPDoyrBAkSdlluaZDPcoGE5af0qS9vXR5VAp1xwbnmVvJwwT%2Fe4elFy8ARG03eFNjh2YsEqzRXYgWdOMWBLfjcK%2FXN%2FyCzkal%2F42cw22LOj4BtKyCDcKTZEs%2FzAaar3Sm%2BBI4MgvKyNavRgv2hkGEU8ygizyzaVA7lr6OKv%2FbWxO3NLst%2BULGtv7R2emgGNAirbum%2BQhOvcOkw%2B6qX8WwFB8w7LVmn0qkqO9BRlwyzvN72JMgkERI4IOi4bwKs70z67KB2bZN1F0vwt8TrTLPHjMtdYZDEhrQZk6gzj9RvMjC2pXeox74%2BnYx2zB%2FJcax%2BOjoq%2F0ss8GtcG0Ft%2BKX1T7una%2FaZbS2V6lBrUZKMUncbvyuRa6VHbFWcsaV%2BP7F1QZaSmot2Na0mtmtQIJSQs%2FfZse3biz4L3i1AoodjiOXIz562C7jDnu7eTBjqzAnaZV4KH90c6s8Qfz0FwPBf3lIgGCpw8A1qDHFEFE%2BDug0IdN046yAIcyzgOQZPTiG45%2FsRTRJz2Eeki2ynz1lJka1ZGZJTFPaePkM1byroCtnRQjueTVoTluSVXa2vTnJLxIMQVFw7RCoVFaWF4EwAYDOQ%2FkCIOXiPd6Eq7dwTndDZ42rzIqzlQJ98o8I%2Fvw6v4clOPCSRLES%2FHch8x1K5eExgngsWT603ZbXZfRk77Pg%2BaArbx4yPRgtFDDRTiQ%2FxeTokYqH3KVUW7DfhSn6YhygtMclLJZ3oqAc6Q1NRsw1LXRkLG0eEffDHGhbnrSnJFjAwJmuQNyPTdIPg6A%2BFPZCekhXMp9ZAA0ggwJw4mJ56nAmgz5DVPu3dyx6iBBBw6%2FtsUTN%2BZJkMBMfOM0ae%2FPQc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220501T070711Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYGOJIP74GAMODHOG%2F20220501%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=bf4da98e363d09d8abde794267abaf28c5cd7f2837d398ad8f69419d4444ac7d">
   <meta name="og:site_name" content="Adnan Niaz Portfolio">
-  <meta name="og:description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma.">
+  <meta name="og:description"
+    content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma.">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Adnan Niaz Portfolio" />
-  <meta name="twitter:image" content="./assets/images/og.png" /> -->
+  <meta name="twitter:image"
+    content="https://adi-resources.s3.us-west-1.amazonaws.com/sanix-studio.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFkaCXVzLXdlc3QtMSJHMEUCIGKMTwhvzoJ3ZqLmdqoqXl1a6fV7aoHLFHAoCjWUKe%2B%2BAiEAtm4j%2FbauN1xDMHdnRvdc7SqhG9lXVrSeRo6N6kcuc04q5AIIIhAAGgw1NjM1OTk2NzEyODgiDILZ16WqaLzeK%2BPDoyrBAkSdlluaZDPcoGE5af0qS9vXR5VAp1xwbnmVvJwwT%2Fe4elFy8ARG03eFNjh2YsEqzRXYgWdOMWBLfjcK%2FXN%2FyCzkal%2F42cw22LOj4BtKyCDcKTZEs%2FzAaar3Sm%2BBI4MgvKyNavRgv2hkGEU8ygizyzaVA7lr6OKv%2FbWxO3NLst%2BULGtv7R2emgGNAirbum%2BQhOvcOkw%2B6qX8WwFB8w7LVmn0qkqO9BRlwyzvN72JMgkERI4IOi4bwKs70z67KB2bZN1F0vwt8TrTLPHjMtdYZDEhrQZk6gzj9RvMjC2pXeox74%2BnYx2zB%2FJcax%2BOjoq%2F0ss8GtcG0Ft%2BKX1T7una%2FaZbS2V6lBrUZKMUncbvyuRa6VHbFWcsaV%2BP7F1QZaSmot2Na0mtmtQIJSQs%2FfZse3biz4L3i1AoodjiOXIz562C7jDnu7eTBjqzAnaZV4KH90c6s8Qfz0FwPBf3lIgGCpw8A1qDHFEFE%2BDug0IdN046yAIcyzgOQZPTiG45%2FsRTRJz2Eeki2ynz1lJka1ZGZJTFPaePkM1byroCtnRQjueTVoTluSVXa2vTnJLxIMQVFw7RCoVFaWF4EwAYDOQ%2FkCIOXiPd6Eq7dwTndDZ42rzIqzlQJ98o8I%2Fvw6v4clOPCSRLES%2FHch8x1K5eExgngsWT603ZbXZfRk77Pg%2BaArbx4yPRgtFDDRTiQ%2FxeTokYqH3KVUW7DfhSn6YhygtMclLJZ3oqAc6Q1NRsw1LXRkLG0eEffDHGhbnrSnJFjAwJmuQNyPTdIPg6A%2BFPZCekhXMp9ZAA0ggwJw4mJ56nAmgz5DVPu3dyx6iBBBw6%2FtsUTN%2BZJkMBMfOM0ae%2FPQc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220501T070711Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYGOJIP74GAMODHOG%2F20220501%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=bf4da98e363d09d8abde794267abaf28c5cd7f2837d398ad8f69419d4444ac7d" />
 
-
-  <meta property="og:title" content="Adnan Niaz Portfolio"/>
-  <meta property="og:description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma."/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:image" content="https://adi-wavely-sitemap.s3.us-west-1.amazonaws.com/og_img.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBoaCXVzLWVhc3QtMiJGMEQCIBnp3mqnM4fJO14OUQtBPbVPJANf1YOYD5zosk7u8KhPAiAKGsVw%2FnMgGKDmGJjTirqlfn90CooehiFEAF%2FWTT%2BLFSqEAwjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDEyOTAyMDgwMDYxNCIMJw8edrtZwWoj%2BQY5KtgCgVEcDZnxoAxOaeXYayp2gVTxf49ZS%2FZwMyklkX7tNpTo9iTkNUqHeDCV0y9jYD66IaVSXvHtw%2F5ryfh26bQiCpEdGXFbFmXPYZaQjMyK2t8jpbE3Jgg5S6%2FqD4yxgAjzCTqooHtTwpIbJnJ85GtdQH9eytPl8G8rOvtifK5Cuu%2FSh1E%2BmUH7eofbkLe6V2fewpfKHHZCcLUNkRXx7bA530d%2FVUlR2z8RoopwJYpxD9JnTylca0rFqZc6QkcuytLI9BpTr%2BZUjg5h39LyBWeTjDW%2F9G%2FX%2BThlokWFMYaFfWf5lxkSrlGkoCApkhd0s78OY63tkckfVGU0CZ4bq39xInv1QEnXFa9RPZQCtHGGHaKOmLBV518Ogr%2FkT1fJjkFjnSvc%2BGifYLvh1Y4oeTd5WCW94Mg5%2Bq7KR98vnzgpvMWKhIhMXlf6Jpbit%2BLMwO27Lwp%2BslwoQWUw8NCpkwY6tAIiy7RgKS0ijhVCgpQbVqZfE%2BBmRkhiqe2eIqCspSbws8QQN6KMdYLQefr4ulXmiv46kZpL08bQW7G%2BBgdnTUxbM6NldySk0A2o6PvuQZ8Wr3aCZwnu5pW0zT%2FzLU9y9IJOJfwCLrE6yeXse4NtAo2keZkN7wDqO%2FRnsZinY8VJ5VrBhQC%2Fl0OJ82C2t%2FdWAMcpUO3grgGE3hjusZgCd%2BeWdEQfjhnrIEG%2BPPCuaT55%2BABUU3aS1WnuuslPQv9WHBKGbh8S6y5EIj60o8Qon5cl4Tm9lkNtUdK2bdsQyc8DwQUSR%2BlNgWDkyFXkRh59XvAPIBmlqC6QU82%2Bx78bb%2BHcB%2F1D09dmiChHu7K1w6NVpfV5LPXx9NQA4PAiQmHRT%2BQzGtSz%2Fy66HLBjlow9vSTh29IGKg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220428T101303Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAR4CR5FZTONCWPKX6%2F20220428%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=e017dd09ad0eb80e01e56f3b8640e58fbfd9e4dd243d88d1750e9d0816a1ef77"/>
-  <meta property="og:site_name" content="Adi Portfolio"/>
-  <meta itemProp="name" content="Adi Portfolio"/>
-  <meta itemProp="description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma."/>
-  <meta itemProp="image" content="https://adi-wavely-sitemap.s3.us-west-1.amazonaws.com/og_img.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBoaCXVzLWVhc3QtMiJGMEQCIBnp3mqnM4fJO14OUQtBPbVPJANf1YOYD5zosk7u8KhPAiAKGsVw%2FnMgGKDmGJjTirqlfn90CooehiFEAF%2FWTT%2BLFSqEAwjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDEyOTAyMDgwMDYxNCIMJw8edrtZwWoj%2BQY5KtgCgVEcDZnxoAxOaeXYayp2gVTxf49ZS%2FZwMyklkX7tNpTo9iTkNUqHeDCV0y9jYD66IaVSXvHtw%2F5ryfh26bQiCpEdGXFbFmXPYZaQjMyK2t8jpbE3Jgg5S6%2FqD4yxgAjzCTqooHtTwpIbJnJ85GtdQH9eytPl8G8rOvtifK5Cuu%2FSh1E%2BmUH7eofbkLe6V2fewpfKHHZCcLUNkRXx7bA530d%2FVUlR2z8RoopwJYpxD9JnTylca0rFqZc6QkcuytLI9BpTr%2BZUjg5h39LyBWeTjDW%2F9G%2FX%2BThlokWFMYaFfWf5lxkSrlGkoCApkhd0s78OY63tkckfVGU0CZ4bq39xInv1QEnXFa9RPZQCtHGGHaKOmLBV518Ogr%2FkT1fJjkFjnSvc%2BGifYLvh1Y4oeTd5WCW94Mg5%2Bq7KR98vnzgpvMWKhIhMXlf6Jpbit%2BLMwO27Lwp%2BslwoQWUw8NCpkwY6tAIiy7RgKS0ijhVCgpQbVqZfE%2BBmRkhiqe2eIqCspSbws8QQN6KMdYLQefr4ulXmiv46kZpL08bQW7G%2BBgdnTUxbM6NldySk0A2o6PvuQZ8Wr3aCZwnu5pW0zT%2FzLU9y9IJOJfwCLrE6yeXse4NtAo2keZkN7wDqO%2FRnsZinY8VJ5VrBhQC%2Fl0OJ82C2t%2FdWAMcpUO3grgGE3hjusZgCd%2BeWdEQfjhnrIEG%2BPPCuaT55%2BABUU3aS1WnuuslPQv9WHBKGbh8S6y5EIj60o8Qon5cl4Tm9lkNtUdK2bdsQyc8DwQUSR%2BlNgWDkyFXkRh59XvAPIBmlqC6QU82%2Bx78bb%2BHcB%2F1D09dmiChHu7K1w6NVpfV5LPXx9NQA4PAiQmHRT%2BQzGtSz%2Fy66HLBjlow9vSTh29IGKg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220428T101303Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAR4CR5FZTONCWPKX6%2F20220428%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=e017dd09ad0eb80e01e56f3b8640e58fbfd9e4dd243d88d1750e9d0816a1ef77"/>
-  <meta name="description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma."/>
-  <meta name="keywords" content="Adnan Niaz Portfolio, Adi Portfolio, Software Engineer, Full-stack developer, Front-end developer, UI Developer"/>
-  <meta name="author" property="og:author" content="replit"/>
-  <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:site" content="@adnanniaz"/>
-  <meta name="twitter:title" content="Home"/>
-  <meta name="twitter:description" content="Adnan Niaz projects portfolio. This portfolio demonstrates who Adnan Niaz is, the skills, work and project done by Adnan Niaz using HTML, CSS, and JavaScript and figma."/>
-  <meta name="twitter:image" content="https://adi-wavely-sitemap.s3.us-west-1.amazonaws.com/og_img.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBoaCXVzLWVhc3QtMiJGMEQCIBnp3mqnM4fJO14OUQtBPbVPJANf1YOYD5zosk7u8KhPAiAKGsVw%2FnMgGKDmGJjTirqlfn90CooehiFEAF%2FWTT%2BLFSqEAwjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDEyOTAyMDgwMDYxNCIMJw8edrtZwWoj%2BQY5KtgCgVEcDZnxoAxOaeXYayp2gVTxf49ZS%2FZwMyklkX7tNpTo9iTkNUqHeDCV0y9jYD66IaVSXvHtw%2F5ryfh26bQiCpEdGXFbFmXPYZaQjMyK2t8jpbE3Jgg5S6%2FqD4yxgAjzCTqooHtTwpIbJnJ85GtdQH9eytPl8G8rOvtifK5Cuu%2FSh1E%2BmUH7eofbkLe6V2fewpfKHHZCcLUNkRXx7bA530d%2FVUlR2z8RoopwJYpxD9JnTylca0rFqZc6QkcuytLI9BpTr%2BZUjg5h39LyBWeTjDW%2F9G%2FX%2BThlokWFMYaFfWf5lxkSrlGkoCApkhd0s78OY63tkckfVGU0CZ4bq39xInv1QEnXFa9RPZQCtHGGHaKOmLBV518Ogr%2FkT1fJjkFjnSvc%2BGifYLvh1Y4oeTd5WCW94Mg5%2Bq7KR98vnzgpvMWKhIhMXlf6Jpbit%2BLMwO27Lwp%2BslwoQWUw8NCpkwY6tAIiy7RgKS0ijhVCgpQbVqZfE%2BBmRkhiqe2eIqCspSbws8QQN6KMdYLQefr4ulXmiv46kZpL08bQW7G%2BBgdnTUxbM6NldySk0A2o6PvuQZ8Wr3aCZwnu5pW0zT%2FzLU9y9IJOJfwCLrE6yeXse4NtAo2keZkN7wDqO%2FRnsZinY8VJ5VrBhQC%2Fl0OJ82C2t%2FdWAMcpUO3grgGE3hjusZgCd%2BeWdEQfjhnrIEG%2BPPCuaT55%2BABUU3aS1WnuuslPQv9WHBKGbh8S6y5EIj60o8Qon5cl4Tm9lkNtUdK2bdsQyc8DwQUSR%2BlNgWDkyFXkRh59XvAPIBmlqC6QU82%2Bx78bb%2BHcB%2F1D09dmiChHu7K1w6NVpfV5LPXx9NQA4PAiQmHRT%2BQzGtSz%2Fy66HLBjlow9vSTh29IGKg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220428T101303Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAR4CR5FZTONCWPKX6%2F20220428%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=e017dd09ad0eb80e01e56f3b8640e58fbfd9e4dd243d88d1750e9d0816a1ef77"/>
-  <meta name="google" value="notranslate"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
-  
-  
-  <link rel="shortcut icon" href="./assets/images/ss.ico" sizes="196x196" type="image/png"/>
+  <link rel="shortcut icon" href="./assets/images/ss.ico" sizes="196x196" type="image/png" />
   <link rel="icon" type="image/png" sizes="24x24" href="./assets/images/ss.ico">
   <link rel="mask-icon" href="./assets/images/icn.png" color="#ffffff">
   <script src="https://kit.fontawesome.com/92c22ce958.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Adi Portfolio</title>
 </head>
+
 <body>
 
   <header>
@@ -69,7 +58,7 @@
           <a class="toggle-menu" tabindex="6">
             <i id="toggle-menu-bars" class="fa fa-bars"></i>
           </a>
-       </div>
+        </div>
       </div>
       <div class="intro">
         <div class="about-text">
@@ -78,7 +67,7 @@
         </div>
         <div class="ctas">
           <a class="cta" href="#projects">My Projects</a>
-          <a class="cta" href="https://drive.google.com/file/d/15o8_2fG8Ue4kAXMGZp2bFEC35ZuMHMCS/view?usp=sharing" 
+          <a class="cta" href="https://drive.google.com/file/d/15o8_2fG8Ue4kAXMGZp2bFEC35ZuMHMCS/view?usp=sharing"
             target="_blank" rel="noopener noreferrer">View My CV</a>
         </div>
       </div>
@@ -216,7 +205,7 @@
         <div class="project">
           <div class="project-info">
             <h3 class="project-title">InfoMovia</h3>
-            <p class="project-description">InfoMovia is a front-end application that 
+            <p class="project-description">InfoMovia is a front-end application that
               allows users to retrieve information for movies/tv-shows from TMDB</p>
             <ul class="project-tech">
               <li>HTML5</li>
@@ -225,9 +214,11 @@
               <li>TMDB API</li>
             </ul>
             <div class="project-links">
-              <a class="project-link" rel="noopener noreferrer" target="_blank" href="https://github.com/sanixstudio/infomovia.git">
+              <a class="project-link" rel="noopener noreferrer" target="_blank"
+                href="https://github.com/sanixstudio/infomovia.git">
                 <i class="fab fa-github"></i>code</a>
-              <a class="project-link" rel="noopener noreferrer" target="_blank" href="https://sanixstudio.github.io/infomovia/">
+              <a class="project-link" rel="noopener noreferrer" target="_blank"
+                href="https://sanixstudio.github.io/infomovia/">
                 <i class="fas fa-globe"></i>demo</a>
             </div>
           </div>
@@ -238,9 +229,10 @@
         <div class="project">
           <div class="project-info">
             <h3 class="project-title">Fire Gallery</h3>
-            <p class="project-description">FireGallery is front-end REACT application that allow users to upload images to Firebase database that 
+            <p class="project-description">FireGallery is front-end REACT application that allow users to upload images
+              to Firebase database that
               are seen by the community members that are active on FireGallery</p>
-             <ul class="project-tech">
+            <ul class="project-tech">
               <li>React</li>
               <li>CSS3</li>
               <li>Firebase</li>
@@ -248,7 +240,8 @@
               <li>Motion-framer</li>
             </ul>
             <div class="project-links">
-              <a class="project-link" href="https://github.com/sanixstudio/fireGallery.git" rel="noopener noreferrer" target="_blank">
+              <a class="project-link" href="https://github.com/sanixstudio/fireGallery.git" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-github"></i>code</a>
               <a class="project-link" href="https://firegallery.netlify.app/" rel="noopener noreferrer" target="_blank">
                 <i class="fas fa-globe"></i>demo</a>
@@ -261,19 +254,21 @@
         <div class="project">
           <div class="project-info">
             <h3 class="project-title">Todo</h3>
-            <p class="project-description">Todo App is full-stack application that allows user to create, read, 
+            <p class="project-description">Todo App is full-stack application that allows user to create, read,
               update, and delete notes that remains persistent in the MongoDB database.</p>
-             <ul class="project-tech">
-               <li>React</li>
-               <li>Bootstrap</li>
-               <li>Node</li>
-               <li>Express</li>
-               <li>MongoDB</li>
+            <ul class="project-tech">
+              <li>React</li>
+              <li>Bootstrap</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>MongoDB</li>
             </ul>
             <div class="project-links">
-              <a class="project-link" href="https://github.com/sanixstudio/Todo-app-backend.git" rel="noopener noreferrer" target="_blank">
+              <a class="project-link" href="https://github.com/sanixstudio/Todo-app-backend.git"
+                rel="noopener noreferrer" target="_blank">
                 <i class="fab fa-github"></i>code</a>
-              <a class="project-link" href="https://mern-todo-appv1.netlify.app/" rel="noopener noreferrer" target="_blank">
+              <a class="project-link" href="https://mern-todo-appv1.netlify.app/" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fas fa-globe"></i>demo</a>
             </div>
           </div>
@@ -297,7 +292,8 @@
         </div>
       </div>
       <div class="contact">
-        <a class="contact-social" href="https://www.linkedin.com/in/sanixstudio/" rel="noopener noreferrer" target="_blank">
+        <a class="contact-social" href="https://www.linkedin.com/in/sanixstudio/" rel="noopener noreferrer"
+          target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a>
         <a class="contact-social" href="https://github.com/sanixstudio" rel="noopener noreferrer" target="_blank">
@@ -305,7 +301,9 @@
         </a>
         <a class="contact-social" href="https://codesandbox.io/u/sanixstudio" rel="noopener noreferrer" target="_blank">
           <svg width="21" height="24" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="svg-icon" d="M0 8L13.938 0L27.881 8L28.001 23.932L13.938 32L0 24V8ZM2.786 11.307V17.651L7.244 20.13V24.818L12.541 27.881V16.85L2.786 11.307ZM25.104 11.307L15.349 16.849V27.88L20.641 24.817V20.135L25.105 17.651L25.104 11.307ZM4.177 8.802L13.917 14.328L23.677 8.755L18.516 5.823L13.969 8.417L9.396 5.792L4.177 8.802Z" fill="#581C98"/>
+            <path class="svg-icon"
+              d="M0 8L13.938 0L27.881 8L28.001 23.932L13.938 32L0 24V8ZM2.786 11.307V17.651L7.244 20.13V24.818L12.541 27.881V16.85L2.786 11.307ZM25.104 11.307L15.349 16.849V27.88L20.641 24.817V20.135L25.105 17.651L25.104 11.307ZM4.177 8.802L13.917 14.328L23.677 8.755L18.516 5.823L13.969 8.417L9.396 5.792L4.177 8.802Z"
+              fill="#581C98" />
           </svg>
         </a>
       </div>
@@ -319,4 +317,5 @@
 
   <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
